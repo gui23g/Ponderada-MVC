@@ -33,6 +33,7 @@
 ## Controladores (Controllers)
 
 **Users**
+
 - Exibir Nome: Exibe o nome do funcionário no perfil do usuário. **Model:** Nome; **View:** Perfil do usuário 
 - Alterar senha: Troca a senha do funcionário. **Model:** Senha; **View:** Perfil do usuário
 - Informar pendências: Chama as pendências do usuário para exibi-las. **Model:** Pendências; **View:** Minha lista
@@ -47,10 +48,12 @@
 ## Views
 
 **Login**
+
 - Inserir email: Campo para o usuário inserir o email
 - Inserir senha: Campo para o usuário inserir a senha
 
 **Home page**
+
 - Treinamentos pendentes: Campo onde é possivel visualizar e acessar os treinamentos pendentes daquele funcionário
 - Minha lista: A listagem de tudo que foi atribuido para aquele funcionário, inclusive o que já foi concluido
 - Favoritos: A listagem de todos os itens favoritados pelo funcionário
@@ -63,12 +66,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O Banco de dados vai funcionar utilizando as ferramentas Salils.js, PostgreSQL e DBeaver.
 
 **Salis.js**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É um framework Node.js que facilita a construção de aplicativos da web e APIs RESTful, fornecendo estrutura e convenções para desenvolvimento rápido e escalável.
 
 **PostgreSQL**
+
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua confiabilidade, robustez e recursos avançados, como suporte a transações ACID e extensibilidade.
 
 **DBeaver**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É uma ferramenta de gerenciamento de banco de dados universal e gratuita, que oferece uma interface gráfica para trabalhar com diversos bancos de dados, incluindo PostgreSQL, MySQL, Oracle, SQL Server, entre outros. Ele permite executar consultas, visualizar e modificar dados, gerenciar esquemas e muito mais.
 
 ## Justifique as escolhas feitas e como elas impactam o projeto
@@ -78,14 +84,17 @@
 ## Implicações da Arquitetura
 
 **Escalabilidade**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A separação clara dos dados e da lógica de negócios facilita a escalabilidade do sistema, permitindo que o banco de dados seja otimizado independentemente da lógica da aplicação.
 
 **Manutenção**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A separação da lógica permite que as alterações na interface do usuário sejam feitas independentemente da lógica de negócios ou controle.
 
 **Testabilidade**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os dados podem ser testadas para garantir que o fluxo seja executado corretamente conforme o que é fornecido pelo usuário.
 
 **Reusabilidade**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um aspecto que está estrutura de listas pode contribuir é na reusabilidade de controladores, já que o fluxo pode ser parecido em outras futuras telas.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um aspecto que está estrutura de listas pode contribuir é na reusabilidade de controladores, já que o fluxo pode ser parecido em outras futuras telas.
